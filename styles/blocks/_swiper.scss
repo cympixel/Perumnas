@@ -1,0 +1,25 @@
+.swiper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto !important; /* ширину контролирует Swiper */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;  /* обрезает без искажения */
+  border-radius: 12px;
+}

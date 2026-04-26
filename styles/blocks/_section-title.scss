@@ -1,0 +1,12 @@
+@use '../helpers' as *;
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(24);
+    
+
+    @include mobile{
+        row-gap: rem(32);
+    }
+}

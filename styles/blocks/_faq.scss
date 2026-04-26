@@ -1,0 +1,96 @@
+@use '../helpers' as *;
+
+.faq{
+    margin-block: fluid(120, 60);
+    &__inner{
+        display: flex;
+        column-gap: rem(64);
+        justify-content: space-between;
+
+        @include mobile{
+            flex-direction: column;
+            row-gap: rem(60);
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(20);
+    }
+    &__accordion {
+        --rotate: 90deg;
+        padding: rem(24);
+        border: 1px solid #E5E5E6;
+        border-radius: 8px;
+        max-width: rem(666);
+        transition-duration: var(--transition-duration, 0.3s);
+
+        @include mobile {
+            padding: rem(20);
+        }
+
+        /* ИСПРАВЛЕНО: было &__details, стало &-details */
+        &-details {   
+            &[open] {
+                 --rotate: 0deg;
+                 
+                & + .faq__accordion-content {
+                    grid-template-rows: 1fr;
+                }
+            }
+        }
+
+        &-summary {
+            display: flex;
+            justify-content: space-between;
+            column-gap: rem(12);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        &-plus {
+            flex-shrink: 0;
+            position: relative;
+            width: rem(16.5);
+            height: rem(16.5);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before,
+            &::after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                translate: -50% -50%;
+                content: '';
+                width: 100%;
+                height: rem(1.5);
+                background-color: black;
+            }
+            &::after {
+                rotate: var(--rotate);
+                transition-duration: var(--transition-duration, 0.3s);
+            }
+        }
+
+        /* ИСПРАВЛЕНО: было &__content, стало &-content */
+        &-content {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition-duration: var(--transition-duration-longer, 0.5s);
+
+            &-inner {
+                overflow: hidden;
+            }
+
+            &-body {
+                margin-top: 20px;
+            }
+        }
+    }
+    &__title{
+        max-width: rem(550);
+    }
+   
+}

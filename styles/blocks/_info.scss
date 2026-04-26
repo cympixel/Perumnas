@@ -1,0 +1,61 @@
+@use '../helpers' as *;
+
+.info{
+    &__inner{
+       margin-block: fluid(120, 60);
+     
+    }
+    &__top{
+        display: grid;
+        @include mobile-above{
+            grid-template-columns: 1fr 56%;
+            grid-template-rows: 43% 1fr;
+        }
+        gap:fluid(80,60);
+        
+        &-list{
+            display: flex;
+            column-gap: fluid(136,10);
+        }
+        &-item{
+            display: grid;
+            row-gap: rem(12);
+        }
+        &-value{
+            @include fluid-text(36, 24);
+            font-weight: 500;
+            color: var(--title-color);
+        }
+    }
+    &__title{
+        grid-row: -1/1;
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        row-gap: rem(40);
+        
+        
+        &-block{
+            max-width: rem(680);
+            display: grid;
+            row-gap: fluid(24,18);
+        }
+
+        @include mobile{
+            row-gap: rem(60);
+        }
+    }
+   
+   &__slider{
+    @include laptop-above{
+
+        max-width: 74vw;
+        margin-left: auto;
+    }
+    padding-left: 1rem;
+    margin-block: fluid(80,60);
+   }
+
+}
