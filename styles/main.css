@@ -540,18 +540,21 @@ a:hover {
 }
 
 .swiper-slide {
-  flex-shrink: 0;
-  width: auto !important; /* ширину контролирует Swiper */
+  width: auto !important;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .swiper-slide img {
   width: 100%;
-  object-fit: cover; /* обрезает без искажения */
+  object-fit: cover;
   border-radius: 12px;
+}
+@media (width <= 47.99875rem) {
+  .swiper-slide img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .faq {
@@ -585,9 +588,6 @@ a:hover {
   .faq__accordion {
     padding: 1.25rem;
   }
-}
-.faq__accordion {
-  /* ИСПРАВЛЕНО: было &__details, стало &-details */
 }
 .faq__accordion-details[open] {
   --rotate: 0deg;
@@ -624,9 +624,6 @@ a:hover {
 .faq__accordion-plus::after {
   rotate: var(--rotate);
   transition-duration: var(--transition-duration, 0.3s);
-}
-.faq__accordion {
-  /* ИСПРАВЛЕНО: было &__content, стало &-content */
 }
 .faq__accordion-content {
   display: grid;

@@ -1,14 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper", {
     loop: true, 
-    slidesPerView: 3,
+    loopedSlides: 8,
+    slidesPerView: "auto",
     spaceBetween: 24,
-
+    centeredSlides: true,
+    touchThreshold: 15,
+    speed: 400, 
+     
     breakpoints: {
-      768: { spaceBetween: 40 },   // на планшете
+      768: { spaceBetween: 40 },   
     }
   });
 });
+
+
 
 let burgerButton = document.querySelector('[data-js-header-button]')
 let overlayElement = document.querySelector('[data-js-header-overlay]')

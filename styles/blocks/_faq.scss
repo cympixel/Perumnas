@@ -29,7 +29,6 @@
             padding: rem(20);
         }
 
-        /* ИСПРАВЛЕНО: было &__details, стало &-details */
         &-details {   
             &[open] {
                  --rotate: 0deg;
@@ -74,7 +73,7 @@
             }
         }
 
-        /* ИСПРАВЛЕНО: было &__content, стало &-content */
+       
         &-content {
             display: grid;
             grid-template-rows: 0fr;
