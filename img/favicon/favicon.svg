@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="33" viewBox="0 0 22 33" fill="none"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><g filter="url(#filter0_d_0_136)">
+<path d="M7 24.2212V9.22119H12.073C13.1802 9.22119 14.0975 9.43359 14.8249 9.8584C15.5522 10.2832 16.0966 10.8643 16.458 11.6016C16.8193 12.334 17 13.1592 17 14.0771C17 15 16.817 15.8301 16.451 16.5674C16.0896 17.2998 15.543 17.8809 14.811 18.3105C14.0836 18.7354 13.1686 18.9478 12.066 18.9478H8.57748V17.0288H11.8714C12.571 17.0288 13.1385 16.9019 13.574 16.6479C14.0095 16.3892 14.3292 16.0376 14.533 15.5933C14.7369 15.1489 14.8388 14.6436 14.8388 14.0771C14.8388 13.5107 14.7369 13.0078 14.533 12.5684C14.3292 12.1289 14.0072 11.7847 13.5671 11.5356C13.1316 11.2866 12.5571 11.1621 11.8436 11.1621H9.14732V24.2212H7Z" fill="white"></path>
+</g><path d="M1.48576 8.64976V7.16405L11.1429 1.22119L20.8 7.16405V27.2212H5.00679e-05" stroke="white" stroke-width="2.08"></path><defs>
+<filter id="filter0_d_0_136" x="3" y="9.22119" width="18" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+<feOffset dy="4"></feOffset>
+<feGaussianBlur stdDeviation="2"></feGaussianBlur>
+<feComposite in2="hardAlpha" operator="out"></feComposite>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_136"></feBlend>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_136" result="shape"></feBlend>
+</filter>
+</defs></svg>

@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.swiper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  width: auto !important; 
+  height: auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;  
+  border-radius: 12px;
+
+  @include mobile{
+    height: 200px; 
+    width: 100%;
+    object-fit: cover;
+  }
+}
